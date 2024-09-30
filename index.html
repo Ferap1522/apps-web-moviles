@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Web y Móviles - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo" class="logo" onclick="window.location='index.html'">
+        <h1 class="header-title">Programación de Aplicaciones Web y Móviles</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div> 
+        <nav class="header-nav" id="nav">
+            <a href="index.html">Inicio</a>
+            <a href="semanas.html">Semanas</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="inicio">
+                <p>La asignatura de Programación de Aplicaciones Móviles Web tiene como objetivo principal proporcionar a los estudiantes
+                    los conocimientos y habilidades esenciales para el diseño y desarrollo de aplicaciones móviles web. A través del uso de tecnologías y frameworks modernos, los estudiantes aprenderán a crear aplicaciones eficientes, funcionales y atractivas que se adapten a las necesidades del usuario y al entorno actual del desarrollo móvil.</p>
+                <div class="image-container"> 
+                    <img id="Imagen" src="img/web1.jpg" alt="Imagen de bienvenida" class="centered-image"/>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <style>
+        .image-container {
+            display: flex; 
+            justify-content: center; 
+            margin-top: 20px; 
+        }
+    
+        .centered-image {
+            width: 80%; 
+            max-width: 300px; 
+            height: auto; 
+        }
+    </style>
+    
+
+    <footer>
+        <p>&copy; 2024 Programación de aplicaciones Web y Móviles.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active'); 
+        }
+    </script>
+</body>
+</html>
